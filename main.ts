@@ -137,7 +137,7 @@ const persistenceRow = (p1: number, h: number): number[] => {
  */
 const forecastRows = (c: Case, p1: number): Array<{ hour: number; q: number[] }> => {
   const hours = Array.isArray(c.forecast) && c.forecast.length > 0
-    ? c.forecast.map((f) => f.hour).filter((h) => h >= 2 && h <= 24)
+    ? [...new Set(c.forecast.map((f) => f.hour).filter((h) => h >= 2 && h <= 24))].sort((a, b) => a - b)
     : HOURS;
   const fallback = hours.map((h) => ({ hour: h, q: persistenceRow(p1, h) }));
 
