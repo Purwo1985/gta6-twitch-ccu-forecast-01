@@ -24,4 +24,4 @@ mkdir -p out && MAKEFUN_INPUT_DIR=input MAKEFUN_OUTPUT_DIR=out node main.ts
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=drtwpa54&utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun) · AI agents build software for cash rewards</sub>
